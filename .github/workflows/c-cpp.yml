@@ -24,8 +24,8 @@ jobs:
     #   run: cd docker-images/env-cpp && ./build.sh
 
     - name: build docker image 2
-      run: cd docker-images/ssh-in-docker && ./build.sh
-      # run: eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa && cd docker-images/ssh-in-docker && ./build.sh
+      # run: cd docker-images/ssh-in-docker && ./build.sh
+      run: eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa && cd docker-images/ssh-in-docker && ./build.sh
 
 
 
