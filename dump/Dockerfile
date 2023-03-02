@@ -45,13 +45,8 @@ RUN apt-get install -y \
 
 WORKDIR /app/
 
-# RUN pip install -r requirements.txt
 
 # # Remove SSH keys
 # RUN rm -rf /root/.ssh/
-
-# Add the rest of the files
-ADD . .
-
 
 # --build-arg ssh_prv_key="$(cat ~/.ssh/id_rsa)" --build-arg ssh_pub_key="$(cat ~/.ssh/id_rsa.pub)" --squash .
