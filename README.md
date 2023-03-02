@@ -22,3 +22,5 @@ git config --global credential.helper credential.helper store
 git config --global credential.helper 'cache --timeout 7200'
 ```
 ---
+
+Github actions
