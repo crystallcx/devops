@@ -12,6 +12,7 @@ RUN apt-get install -y \
 
 RUN apt-get install -y \
     openssh-client \
+    curl \
     git
 
 #---
