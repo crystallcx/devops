@@ -3,22 +3,10 @@
 function push_image_to_registry()
 {
     local imageWithTag=${IMAGE_WITH_TAG}
-
-    if [ ! -z $1 ]; then
-        imageWithTag="$1"
-    fi
-
-    read -p "Do you wish to push '${FULL_PROJECT}' to '${imageWithTag}'? Ctrl+C to cancel." -n 1 -r
-
     docker push ${imageWithTag}
 }
 
 PROJECT=demo
 FULL_PROJECT=crystallcx/${PROJECT}
-# DOCKER_REPO=${DOCKER_REGISTRY}/${FULL_PROJECT}
 DOCKER_REPO=${FULL_PROJECT}
-
 IMAGE_WITH_TAG=${DOCKER_REPO}:latest
-
-
-# SSH_PRIVATE_KEY=$(cat ~/root/.ssh/id_rsa)
