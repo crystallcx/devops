@@ -1,6 +1,20 @@
 
 # Preparation
 
+## Create Virtual Environment
+### Ubuntu
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Windows
+```
+python -m venv venv
+./venv/Scripts/activate
+```
+
+
 ## Using SSH to login to Github
 ### Generate your ssh key 
 1. Enter the following command in terminal: \
