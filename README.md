@@ -34,7 +34,7 @@ python -m venv venv
     - Navigate to Account Settings -> SSH and GPG Keys 
     - Click 'New SSH Key'
     - Paste in the value of the public key in the Key field.
-    `cat ~/.ssh/id_ed25519.pub`
+    - Obtain the public key using `cat ~/.ssh/id_ed25519.pub`
 
 3. Now you should be able to clone your private repository.
 
